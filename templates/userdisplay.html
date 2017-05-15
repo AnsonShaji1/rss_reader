@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+	{% block content %}
+	<div class="page-header">
+		<h1>Feed {{ d.feed.title }} Live</h1>
+	</div>
+
+		{% for obj in d.entries %}
+			<ul class="list-group">
+				<li class="list-group-item">
+					<h3>{{ obj.title }}</h3>
+					<a href='{{ obj.link }}'>{{ obj.link }}</a><br/>
+				</li>
+			</ul>
+		{% endfor %}
+	</div>
+	{% endblock content %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+	{% block display_all %}
+		<h3>Added url list</h3><br />
+		<div>
+			<ol>
+
+			{% for data in data_list %}
+				<li><a href ="{% url 'content' pk=data.id %}"><h4>{{ data.title }}</h4></a></li>
+			{% endfor %}
+			</ol>
+		</div>
+		
+
+
+		
+
+
+	{% endblock display_all %}
