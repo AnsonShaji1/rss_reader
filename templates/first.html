@@ -1,5 +1,14 @@
-{{title}}
-<form method='POST' action=''>{% csrf_token %}
-	{{form.as_p}}
-	<button type="submit" value="Submit">Submit</button>
-</form>
+{% extends 'base.html' %}
+	{% block first %}
+
+
+		<div class="jumbotron">
+			<h1>RSS READER</h1>
+			<p>The interface is a web page that accepts an RSS URL and lays it out on a web page in a simple but visually appealing manner.</p>
+			
+		</div>
+
+
+
+
+	{% endblock first %}

@@ -103,7 +103,7 @@ def content(request,pk):
 	return render(request,'userdisplay.html',context)
 
 def home(request):
-	return render(request,'base.html',{})
+	return render(request,'first.html',{})
 
 
 def logout_view(request):
